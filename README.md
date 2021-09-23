@@ -38,34 +38,22 @@ Anyone who wants to monitor prices of cryptocurrencies, invest/trade in them, wa
 
 # Idea - 3
 
-## Geo-safety indicator
+## Better Tomorrow
 
 ### Problem Statement
-A mobile app that will notify users if they are in a neighborhood with a high crime rate.
+Many people lack environmental awareness because there are no popular platforms that educate them with relevant and location-based information.
 
 ### Abstract
-Law is something that helps maintain peace among societies. Crime is an unlawful act which is punishable by the state or other authority. Since humans have started living in civilization, we as humans have been striving to eliminate crimes.
-
-Through this project, we aim to build a mobile application that could help in reducing crimes. The application will monitor the GPS location of the user. This location will be used to check the crime rates of the neighborhood from the dataset. After the analysis, a safety-score will be assigned to the area. If the score is above a specific threshold, the user will be notified by a push notification. The user can use this information to be cautious and take precautionary methods to be safe.
-
+Climate change is one of the most alarming issues we face today, and many lack awareness on the topic. The project aims to be a source for educating people who show enthusiasm for a better cause. It includes insightful data points such as Active Wildfires, Air Quality, Power Plants, and Fuel Stations. It also provides related news articles, news, and advice; everything is based on the user's location. This information could be of great use to the general public as it can inspire the current and future generations to take action for a better future.
 The algorithm could further be enhanced to include the profile of users in the analysis. So if the user is a minor, we can prioritize crimes like child abduction. 
 
 
 ### Approach
-We will build an android/iOS application that will poll the GPS coordinates from the OS service at regular intervals. With these location coordinates, we can calculate the safety-score considering a 0.5 or 1 mile perimeter from the dataset.
-
-The safety-score will be recorded on a 1-10 scale; 1 being unsafe and 10 being safest. It can be computed using the following factors (more factors can be added further post discussions):
-
-1. Proximity of the location to the crime location
-2. How recent the crimes have taken place
-3. Type of crime: violent and non-violent
+All the information is aggregated into maps for better visualization. The data is fetched from ArcGIS APIs in real-time, and the articles, news, and advice are fetched from the news API. All the API responses are based on the user's location. Additionally, a user authentication system is integrated into the project to ensure security. NodeJS will be used for the backend, and React will be used for the frontend.
 
 
 ### Persona
-Target audience would be everyone who is concerned about their safety
+The project is targeted towards anyone who seeks to get environmental information around the user's location.
 
 ### Dataset links
-[Sanfrancisco Crime Analysis | Kaggle](https://www.kaggle.com/roshansharma/sanfrancisco-crime-analysis/data)
-
-[CityProtect](https://cityprotect.com/) – This site provides API to get crime data, but it may not be a free option 
- 
+Not applicable as data is fetched in real-time.
