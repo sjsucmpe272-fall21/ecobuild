@@ -17,6 +17,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import OutlinedInput from "@mui/material/OutlinedInput";
+import AppBar from './AppBar';
 
 function Copyright(props) {
   return (
@@ -76,7 +77,8 @@ export default function SignUp() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" >
+        <AppBar></AppBar>
         <CssBaseline />
         <Box
           sx={{

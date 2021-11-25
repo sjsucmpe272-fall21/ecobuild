@@ -6,13 +6,16 @@ import Typography from '@mui/material/Typography';
 import history from "../helpers/history";
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+const Contactinfo = React.lazy(() => import('./ContactInfo'));
+const Mapslist = React.lazy(() => import('./Mapslist'));
 
 const clientId = "998491717109-7pm66r6nuusunh6rrdd2he2vjht6gbl0.apps.googleusercontent.com";
 
 
 
 export default function ButtonAppBar() {
-
 
   const [showloginButton, setShowloginButton] = React.useState(true);
   const [showlogoutButton, setShowlogoutButton] = React.useState(false);
@@ -52,6 +55,24 @@ export default function ButtonAppBar() {
             EcoBuild
           </Typography>
           <div>
+
+
+                    <li>
+                        <a href="/">MainPage</a>
+                    </li>
+                    <li>
+                        <a href="/Contactinfo">Contact info</a>
+                    </li>
+                    <li>
+                        <a href="/mapslist">Maps list</a>
+                    </li>
+                    <li>
+                        <a href="/Signin">Signin</a>
+                    </li>
+                    <li>
+                        <a href="/Signup">Signup</a>
+                    </li>
+
             { showloginButton ?
                 <GoogleLogin
                     clientId={clientId}
