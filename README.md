@@ -23,3 +23,6 @@ Not applicable as data is fetched in real-time.
 ## Architecture Diagram
 
 ![alt text](https://github.com/sjsucmpe272-fall21/ecobuild/blob/main/Architecture_diagram.png)
+
+## Project Link
+https://master.d1dpybzvfkn803.amplifyapp.com/
